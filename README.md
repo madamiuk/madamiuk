@@ -40,13 +40,25 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 ## 💼 Doświadczenie zawodowe
 
-### 🏢 [Intrate Sp. z o.o.] — *Inżynier Systemowy*  
+### 🏢 [Intratel Sp. z o.o.] — *Inżynier Systemowy*  
 📅 [12/2022] – [03/2025]
 - Administrowanie systemami Linux (środowiska produkcyjne i testowe)
 - Konfiguracja i utrzymanie sieci LAN/WAN
 - Monitorowanie infrastruktury IT oraz reagowanie na incydenty i awarie
 - Współpraca z zespołami developerskimi przy wdrażaniu i utrzymaniu aplikacji
 - Tworzenie i aktualizacja dokumentacji technicznej
+
+### 🏢 [Areszt Śledczy w Hajnówce] - *Specjalista ds Informatyki*
+📅 [11/2007] – [01/2022]
+- Koordynator zespołu ds. informatyki i łączności - koordynacja pracy czteroosobowego
+zespołu odpowiadającego za zagadnienia informatyczne; łączność przewodową, łączność 
+bezprzewodową; zabezpieczenia elektroniczne, monitoring CCTV
+- Administrator lokalnych systemów informatycznych - Instalacja, konfiguracja,
+zarządzanie serwerami Windows Server 2016 (Hyper-V, File Server, Active Directory),
+Linux (DHCP, Samba, KVM, QEMU, MYSQL, SQUID), QNAP (Backup)
+- Inspektor bezpieczeństwa teleinformatycznego ustawa z dn. 5 sierpnia 2010 r. o
+ochronie informacji niejawnych - opracowywanie i wdrażanie dokumentacji PBE i SWB
+dla systemów teleinformatycznych służących do przetwarzania informacji niejawnych.
 
 ---
 
@@ -61,6 +73,7 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 - 🏅 Cisco Certified Network Associate (CCNA) — [2003]
 - 🏅 SUSE Certified Engineer in SUSE Linux Enterprise Server 15 — [2023]
+- 🏅 SUSE Certified Administrator in SUSE Linux Enterprise Server 15 — [2023]
 - 🏅 CompTIA Security+ (SY0-701) — [2024]
 ---
 

@@ -64,6 +64,9 @@ dla systemów teleinformatycznych służących do przetwarzania informacji nieja
 
 ## 🎓 Wykształcenie
 
+🎓 [Politechnika Białostocka] — *[Inżynieria zarządzania - Zarządzanie bezpieczeństwem informacji]*  
+📅 [2018 – 2018]
+
 🎓 [Politechnika Białostocka] — *[Informatyka - Systemy oprogramowania]*  
 📅 [2000 – 2007]
 

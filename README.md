@@ -30,7 +30,7 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 ## 🛠️ Umiejętności techniczne
 
-**Systemy operacyjne:** Linux (SUSE, Redhat, Debian)  
+**Systemy operacyjne:** Linux (SUSE, Redhat, Debian) - 
 **Sieci:** LAN/WAN, VLAN, routing, podstawy bezpieczeństwa sieci  
 **Urządzenia sieciowe:** Cisco (konfiguracja i zarządzanie)  
 **Monitoring:** Narzędzia do monitorowania infrastruktury i alertowania  
@@ -40,7 +40,7 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 ## 💼 Doświadczenie zawodowe
 
-### 🏢 [Intratek Sp. z o.o.] — *Inżynier Systemowy*  
+### 🏢 [Intrate Sp. z o.o.] — *Inżynier Systemowy*  
 📅 [12/2022] – [03/2025]
 - Administrowanie systemami Linux (środowiska produkcyjne i testowe)
 - Konfiguracja i utrzymanie sieci LAN/WAN
@@ -55,6 +55,13 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 🎓 [Politechnika Białostocka] — *[Informatyka - Systemy oprogramowania]*  
 📅 [2000 – 2007]
 
+---
+
+## 📜 Certyfikaty
+
+- 🏅 Cisco Certified Network Associate (CCNA) — [2003]
+- 🏅 SUSE Certified Engineer in SUSE Linux Enterprise Server 15 — [2023]
+- 🏅 CompTIA Security+ (SY0-701) — [2024]
 ---
 
 ## 🌍 Języki

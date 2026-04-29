@@ -66,14 +66,14 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=default)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=madamiuk&show_icons=true&theme=default)
 
 ---
 
 ## 📌 Dodatkowe informacje
 
 - Gotowość do pracy w modelu hybrydowym / zdalnym
-- Zainteresowania: [np. AI, open-source, sport]
+- Zainteresowania: Starożytne cywilizacje, Literatura: fantastyka, Fizyka kwantowa
 
 ---
 

@@ -30,11 +30,12 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 
 ## 🛠️ Umiejętności techniczne
 
-**Systemy operacyjne:** Linux (SUSE, Redhat, Debian) - 
+**Systemy operacyjne:** Linux (SUSE, Redhat, Debian)
 **Sieci:** LAN/WAN, VLAN, routing, podstawy bezpieczeństwa sieci  
 **Urządzenia sieciowe:** Cisco (konfiguracja i zarządzanie)  
 **Monitoring:** Narzędzia do monitorowania infrastruktury i alertowania  
-**Narzędzia:** Git, Docker, Linux CLI, SSH  
+**Narzędzia:** Git, Docker, Linux CLI, Ansible, SSH  
+**Usługi:** www, poczta, bazy danych
 
 ---
 
@@ -75,6 +76,7 @@ dla systemów teleinformatycznych służących do przetwarzania informacji nieja
 ## 📜 Certyfikaty
 
 - 🏅 Cisco Certified Network Associate (CCNA) — [2003]
+- 🏅 Auditor wewnętrzny SZBI PN-EN ISO/EIC27001 - [2017]
 - 🏅 SUSE Certified Engineer in SUSE Linux Enterprise Server 15 — [2023]
 - 🏅 SUSE Certified Administrator in SUSE Linux Enterprise Server 15 — [2023]
 - 🏅 CompTIA Security+ (SY0-701) — [2024]
@@ -83,7 +85,7 @@ dla systemów teleinformatycznych służących do przetwarzania informacji nieja
 ## 🌍 Języki
 
 - 🇵🇱 Polski — ojczysty
-- 🇬🇧 Angielski — [np. B2]
+- 🇬🇧 Angielski — [B2]
 
 ---
 

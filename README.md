@@ -31,7 +31,6 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 ## 🛠️ Umiejętności techniczne
 
 **Systemy operacyjne:** Linux (SUSE, Redhat, Debian)
-
 **Sieci:** LAN/WAN, VLAN, routing, podstawy bezpieczeństwa sieci  
 **Urządzenia sieciowe:** Cisco (konfiguracja i zarządzanie)  
 **Monitoring:** Narzędzia do monitorowania infrastruktury i alertowania  

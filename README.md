@@ -31,6 +31,7 @@ Skutecznie reaguję na incydenty i awarie, dbając o ciągłość działania sys
 ## 🛠️ Umiejętności techniczne
 
 **Systemy operacyjne:** Linux (SUSE, Redhat, Debian)
+
 **Sieci:** LAN/WAN, VLAN, routing, podstawy bezpieczeństwa sieci  
 **Urządzenia sieciowe:** Cisco (konfiguracja i zarządzanie)  
 **Monitoring:** Narzędzia do monitorowania infrastruktury i alertowania  
@@ -91,7 +92,7 @@ dla systemów teleinformatycznych służących do przetwarzania informacji nieja
 
 ## 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=madamiuk&show_icons=true&theme=default)
+![GitHub stats](https://github-stats-extended.vercel.app/api?username=madamiuk&show_icons=true&theme=default)
 
 ---
 

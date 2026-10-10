@@ -141,6 +141,45 @@ Self-hosted Runner
      HTTP Verification
 ```
 
+### 🔧 GitLab + Jenkins CI/CD Lab
+
+Praktyczne laboratorium CI/CD zbudowane od podstaw na **Debian 13**, obejmujące pełny workflow od pracy developera do automatycznego wdrożenia aplikacji.
+
+**Technologie:** Debian Linux · GitLab CE · Jenkins · Nginx · Git · OpenJDK · Bash · TLS/PKI
+
+**Zakres projektu:**
+
+* instalacja i konfiguracja GitLab CE oraz Jenkins,
+* Nginx jako reverse proxy dla GitLab i Jenkins,
+* HTTPS z własnym CA i certyfikatami TLS,
+* prywatne repozytorium GitLab i kontrola dostępu,
+* Jenkins deployment do `/var/www`,
+* automatyczny pipeline **GitLab Webhook → Jenkins → Nginx**,
+* Protected Branch i workflow **feature branch → Merge Request → main**,
+* Project Access Token zgodny z zasadą minimalnych uprawnień,
+* diagnostyka DNS, portów, TLS, webhooków i GitLab outbound requests,
+* audyt usług i portów środowiska.
+
+```text
+Developer
+    ↓
+Feature Branch
+    ↓
+GitLab → Merge Request → Protected main
+                         ↓
+                    HTTPS Webhook
+                         ↓
+                      Jenkins
+                         ↓
+                 /var/www/web-demo
+                         ↓
+                       Nginx
+```
+
+📦 **[Repozytorium projektu](https://github.com/madamiuk/gitlab-jenkins-cicd-lab)**
+📘 **[Pełna dokumentacja techniczna](https://madamiuk.github.io/gitlab-jenkins-cicd-lab/)**
+
+
 ---
 
 ## 💼 Doświadczenie zawodowe

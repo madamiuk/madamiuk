@@ -1,6 +1,6 @@
 # 👨‍💻 Mirosław Adamiuk
 
-**Linux System Engineer · DevOps · Infrastructure Automation**
+**Linux System Engineer · Infrastructure Automation · DevOps**
 
 📍 Polska  
 📧 [miroslaw.adamiuk@gmail.com](mailto:miroslaw.adamiuk@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/miros%C5%82aw-adamiuk-548821222/) · 🌐 [GitHub](https://github.com/madamiuk)
@@ -11,9 +11,19 @@
 
 Inżynier systemów Linux z doświadczeniem w administracji środowiskami produkcyjnymi i testowymi, infrastrukturą IT, sieciami oraz monitoringiem.
 
-Specjalizuję się w systemach Linux i automatyzacji infrastruktury z wykorzystaniem **Ansible**. Rozwijam kompetencje w kierunku **DevOps, Infrastructure Automation i Platform Engineering**, budując praktyczne laboratoria obejmujące CI/CD, application servers, monitoring oraz automatyczne wdrożenia.
+Specjalizuję się w automatyzacji infrastruktury z wykorzystaniem **Ansible** i rozwijam kompetencje w kierunku **DevOps, Infrastructure as Code i Platform Engineering**. Buduję praktyczne środowiska obejmujące provisioning, CI/CD, application servers, monitoring i automatyczne wdrożenia.
 
-Interesuje mnie przede wszystkim tworzenie środowisk, które są **powtarzalne, mierzalne, łatwe do wdrożenia i możliwe do odtworzenia jako kod**.
+---
+
+# ⚡ Highlights
+
+- Linux administration in production and test environments
+- Infrastructure automation with **Ansible**
+- End-to-end CI/CD with **GitHub Actions, Jenkins and GitLab**
+- Automated **WildFly** deployments with rollback and artifact verification
+- Monitoring stack: **Nagios, Prometheus, Grafana, NRPE, Node Exporter**
+- Experience with **SUSE Linux, RHEL, Oracle Linux and Debian**
+- **SUSE Certified Engineer · CompTIA Security+ · CCNA**
 
 ---
 
@@ -37,11 +47,11 @@ Interesuje mnie przede wszystkim tworzenie środowisk, które są **powtarzalne,
 
 ## 🔧 Ansible Infrastructure & CI/CD Lab
 
-Praktyczne środowisko automatyzacji deploymentu aplikacji **Java / WildFly / PostgreSQL** zarządzane przez Ansible i GitHub Actions.
+Praktyczne środowisko automatyzacji infrastruktury i deploymentu aplikacji **Java / WildFly / PostgreSQL**, zarządzane przez Ansible i GitHub Actions.
 
 ### Najważniejsze elementy
 
-- role Ansible dla WildFly i PostgreSQL
+- role Ansible dla Java, WildFly, PostgreSQL i monitoringu
 - idempotentna konfiguracja infrastruktury
 - automatyczny build WAR w GitHub Actions
 - self-hosted GitHub Actions Runner na macOS ARM64
@@ -54,33 +64,24 @@ Praktyczne środowisko automatyzacji deploymentu aplikacji **Java / WildFly / Po
 - rotacja backupów WAR
 - weryfikacja REST endpointu po wdrożeniu
 - końcowy raport deploymentu zawierający wersję, commit i checksumę
+- **one-command provisioning, deployment i monitoring onboarding**
+- automatyczne dołączanie hosta do **Node Exporter, NRPE, Nagios, Prometheus i Grafana**
+- dynamiczne generowanie targetów monitoringu z inventory Ansible
 
 ```text
-Git Push
-   │
-   ▼
-GitHub Actions CI
-   │
-   ▼
-WAR Artifact
-   │
-   ▼
-GitHub Actions CD
-   │
-   ▼
-Self-hosted Runner
-   │
-   ▼
-Ansible
-   │
-   ▼
-WildFly ─────► PostgreSQL
-   │
-   ├── pre-flight validation
-   ├── SHA-256 verification
-   ├── deployment
-   ├── automatic rollback
-   └── REST verification
+./deploy-lab.sh <host>
+        │
+        ▼
+     Ansible
+        │
+        ├── Java / WildFly
+        ├── PostgreSQL DataSource
+        ├── WAR + SHA-256 + build metadata
+        ├── rollback + REST verification
+        │
+        └── Monitoring onboarding
+             ├── NRPE ─────────────► Nagios
+             └── Node Exporter ────► Prometheus ───► Grafana
 ```
 
 📦 **[Repozytorium: ansible-lab](https://github.com/madamiuk/ansible-lab)**
@@ -91,14 +92,11 @@ WildFly ─────► PostgreSQL
 
 Laboratorium monitoringu infrastruktury Linux zarządzane jako kod przy użyciu Ansible.
 
-### Stack
-
-**Nagios Core · NRPE · Prometheus · Node Exporter · Grafana · PromQL**
+**Stack:** Nagios Core · NRPE · Prometheus · Node Exporter · Grafana · PromQL
 
 ### Zakres
 
-- automatyczna instalacja i konfiguracja monitoringu
-- dynamiczne generowanie hostów i usług z inventory Ansible
+- dynamiczne generowanie hostów i targetów z inventory Ansible
 - monitoring CPU, RAM, load, filesystem i sieci
 - własne checki NRPE
 - monitoring usług HTTP/TCP
@@ -110,15 +108,9 @@ Laboratorium monitoringu infrastruktury Linux zarządzane jako kod przy użyciu 
 ```text
 Linux Hosts
    │
-   ├── NRPE ─────► Nagios
+   ├── NRPE ─────────────► Nagios
    │
-   └── Node Exporter
-            │
-            ▼
-        Prometheus
-            │
-            ▼
-         Grafana
+   └── Node Exporter ────► Prometheus ───► Grafana
 ```
 
 Doświadczenie laboratoryjne uzupełnia praktyka zawodowa z systemem **Centreon**.
@@ -217,7 +209,7 @@ Nginx
 
 **DevOps · Infrastructure as Code · Platform Engineering · CI/CD · Kubernetes · Observability · Python Automation**
 
-Aktualnie rozwijam się przede wszystkim w kierunku automatyzacji infrastruktury i procesów deploymentu oraz budowania środowisk zarządzanych jako kod.
+Aktualnie rozwijam się przede wszystkim w kierunku automatyzacji infrastruktury, procesów deploymentu oraz budowania środowisk zarządzanych jako kod.
 
 ---
 
@@ -225,12 +217,6 @@ Aktualnie rozwijam się przede wszystkim w kierunku automatyzacji infrastruktury
 
 🇵🇱 Polski — ojczysty  
 🇬🇧 Angielski — B2
-
----
-
-# 📊 GitHub Stats
-
-![GitHub stats](https://github-stats-extended.vercel.app/api?username=madamiuk&show_icons=true&theme=default)
 
 ---
 

@@ -1,223 +1,224 @@
 # 👨‍💻 Mirosław Adamiuk
 
-**Linux System Engineer · Infrastructure Automation · DevOps**
+**Linux System Engineer | Infrastructure Automation | DevOps**
 
-📍 Polska  
-📧 [miroslaw.adamiuk@gmail.com](mailto:miroslaw.adamiuk@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/miros%C5%82aw-adamiuk-548821222/) · 🌐 [GitHub](https://github.com/madamiuk)
-
----
-
-## 👋 O mnie
-
-Inżynier systemów Linux z doświadczeniem w administracji środowiskami produkcyjnymi i testowymi, infrastrukturą IT, sieciami oraz monitoringiem.
-
-Specjalizuję się w automatyzacji infrastruktury z wykorzystaniem **Ansible** i rozwijam kompetencje w kierunku **DevOps, Infrastructure as Code i Platform Engineering**. Buduję praktyczne środowiska obejmujące provisioning, CI/CD, application servers, monitoring i automatyczne wdrożenia.
+📍 Poland  
+💼 [LinkedIn](https://www.linkedin.com/in/miros%C5%82aw-adamiuk-548821222/) · 🌐 [GitHub](https://github.com/madamiuk)
 
 ---
 
-# ⚡ Highlights
+## About me
+
+Linux System Engineer with hands-on experience in Linux infrastructure, networking, monitoring, production support and troubleshooting.
+
+I focus on building repeatable infrastructure workflows with **Ansible, Bash and Git**, covering fresh-host bootstrap, service provisioning, application deployment, database connectivity, CI/CD and observability.
+
+My current direction is **DevOps, Infrastructure as Code and Platform Engineering**, with a strong focus on practical automation and reproducible environments.
+
+---
+
+## ⚡ Highlights
 
 - Linux administration in production and test environments
 - Infrastructure automation with **Ansible**
-- End-to-end CI/CD with **GitHub Actions, Jenkins and GitLab**
-- Automated **WildFly** deployments with rollback and artifact verification
-- Monitoring stack: **Nagios, Prometheus, Grafana, NRPE, Node Exporter**
-- Experience with **SUSE Linux, RHEL, Oracle Linux and Debian**
+- Fresh-host provisioning for **Debian and RHEL-based systems**
+- Java application platforms: **WildFly and Apache Tomcat**
+- PostgreSQL provisioning and JDBC/JNDI integration
+- CI/CD with **GitHub Actions, Jenkins and GitLab**
+- Monitoring with **Centreon, Nagios, Prometheus, Grafana, NRPE and Node Exporter**
+- Networking, DNS, routing, firewalls and service troubleshooting
 - **SUSE Certified Engineer · CompTIA Security+ · CCNA**
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 **Linux:** SUSE Linux Enterprise Server · RHEL · Oracle Linux · Debian  
-**Automation:** Ansible · Bash · Jinja2 · Ansible Vault  
+**Automation:** Ansible · Ansible Vault · Bash · Jinja2  
 **CI/CD:** GitHub Actions · Jenkins · GitLab · Git  
-**Application Servers:** WildFly · Apache Tomcat  
-**Monitoring:** Centreon · Nagios · Prometheus · Grafana · NRPE · Node Exporter  
+**Application Platforms:** WildFly · Apache Tomcat · Java 21 · Maven  
 **Databases:** PostgreSQL · MariaDB/MySQL · Oracle Database  
+**Monitoring:** Centreon · Nagios · Prometheus · Grafana · NRPE · Node Exporter  
 **Web:** Nginx · Apache HTTP Server  
-**Java:** Java 21 · Maven · Jakarta EE · JPA · EJB · REST  
 **Infrastructure:** systemd · LVM · RAID · KVM · QEMU · Docker  
 **Networking:** TCP/IP · VLAN · routing · DNS · Cisco · firewalld · iptables  
-**Tools:** SSH · curl · vim · PromQL · Linux CLI
+**Tools:** SSH · curl · vim · Linux CLI
 
 ---
 
-# 🚀 Projekty
+# 🚀 Featured Projects
 
-## 🔧 Ansible Infrastructure & CI/CD Lab
+## Ansible Infrastructure & CI/CD Lab
 
-Praktyczne środowisko automatyzacji infrastruktury i deploymentu aplikacji **Java / WildFly / PostgreSQL**, zarządzane przez Ansible i GitHub Actions.
+A practical infrastructure automation environment built around **Ansible, Linux, Java application servers, PostgreSQL and monitoring**.
 
-### Najważniejsze elementy
+The project is intentionally developed using fresh virtual machines to expose hidden assumptions and improve automation until infrastructure can be provisioned repeatedly and predictably.
 
-- role Ansible dla Java, WildFly, PostgreSQL i monitoringu
-- idempotentna konfiguracja infrastruktury
-- automatyczny build WAR w GitHub Actions
-- self-hosted GitHub Actions Runner na macOS ARM64
-- pipeline **GitHub Actions → Ansible → WildFly**
-- PostgreSQL JDBC oraz DataSource/JNDI
-- pre-flight validation przed deploymentem
-- SHA-256 artefaktu i weryfikacja integralności
-- Git commit SHA oraz build metadata zapisane w WAR
-- automatyczny backup i rollback
-- rotacja backupów WAR
-- weryfikacja REST endpointu po wdrożeniu
-- końcowy raport deploymentu zawierający wersję, commit i checksumę
-- **one-command provisioning, deployment i monitoring onboarding**
-- automatyczne dołączanie hosta do **Node Exporter, NRPE, Nagios, Prometheus i Grafana**
-- dynamiczne generowanie targetów monitoringu z inventory Ansible
+### Current capabilities
+
+- Debian and RHEL host bootstrap
+- static IPv4, gateway and DNS configuration
+- IPv6 policy automation
+- privilege escalation managed with Ansible Vault
+- WildFly provisioning
+- Apache Tomcat 11 provisioning
+- PostgreSQL provisioning
+- Apache HTTP Server provisioning
+- JDBC and JNDI datasource configuration
+- declarative PostgreSQL `pg_hba.conf`
+- application deployment verification
+- SHA-256 artifact integrity checks
+- deployment backup and rollback
+- idempotency validation
+- Nagios, Prometheus and Grafana onboarding
+- Node Exporter and NRPE automation
+- selective UTM VM startup and controlled lab shutdown
+- one-command provisioning and deployment workflows
 
 ```text
-./deploy-lab.sh <host>
-        │
-        ▼
-     Ansible
-        │
-        ├── Java / WildFly
-        ├── PostgreSQL DataSource
-        ├── WAR + SHA-256 + build metadata
-        ├── rollback + REST verification
-        │
-        └── Monitoring onboarding
-             ├── NRPE ─────────────► Nagios
-             └── Node Exporter ────► Prometheus ───► Grafana
+Fresh Linux VM
+      |
+      v
+ Host Bootstrap
+      |
+      +------------------+------------------+------------------+
+      |                  |                  |                  |
+      v                  v                  v                  v
+   WildFly            Tomcat           PostgreSQL          Apache
+      |                  |                  |                  |
+      +-------- JDBC ----+----------------->|                  |
+      |                                                        |
+      +---------------- Monitoring -----------------------------+
+                           |
+                  +--------+--------+
+                  |                 |
+                  v                 v
+               Nagios          Prometheus
+                                   |
+                                   v
+                                 Grafana
 ```
 
-📦 **[Repozytorium: ansible-lab](https://github.com/madamiuk/ansible-lab)**
+### Main workflows
+
+```bash
+ansible-playbook bootstrap.yml --limit <host>
+
+./deploy-lab.sh <wildfly-host>
+./deploy-database.sh <database-host>
+./deploy-apache.sh <apache-host>
+./deploy-tomcat.sh <tomcat-host>
+
+./start-lab.sh <host1> [host2 ...]
+./halt-lab.sh
+```
+
+### Deployment and provisioning safeguards
+
+- pre-flight validation before deployment
+- remote database connectivity tests
+- datasource verification
+- WAR structure validation
+- SHA-256 source/remote comparison
+- build and deployment metadata
+- automatic backup and rollback
+- application endpoint verification
+- repeated execution with `changed=0`
+
+📦 **[Repository: ansible-lab](https://github.com/madamiuk/ansible-lab)**
 
 ---
 
-## 📊 Monitoring & Observability Lab
+## GitLab + Jenkins CI/CD Lab
 
-Laboratorium monitoringu infrastruktury Linux zarządzane jako kod przy użyciu Ansible.
+A CI/CD environment built from scratch on **Debian 13**.
 
-**Stack:** Nagios Core · NRPE · Prometheus · Node Exporter · Grafana · PromQL
+### Scope
 
-### Zakres
-
-- dynamiczne generowanie hostów i targetów z inventory Ansible
-- monitoring CPU, RAM, load, filesystem i sieci
-- własne checki NRPE
-- monitoring usług HTTP/TCP
-- provisioning Prometheus i Grafana
-- automatyczne dashboardy
-- obsługa architektur ARM64 i AMD64
-- walidacja konfiguracji Prometheus przez `promtool`
-
-```text
-Linux Hosts
-   │
-   ├── NRPE ─────────────► Nagios
-   │
-   └── Node Exporter ────► Prometheus ───► Grafana
-```
-
-Doświadczenie laboratoryjne uzupełnia praktyka zawodowa z systemem **Centreon**.
-
----
-
-## 🔧 GitLab + Jenkins CI/CD Lab
-
-Laboratorium CI/CD zbudowane od podstaw na **Debian 13**.
-
-### Zakres
-
-- GitLab CE oraz Jenkins
-- Nginx jako reverse proxy
-- HTTPS i własne CA
-- prywatne repozytorium GitLab
+- GitLab CE and Jenkins
+- Nginx reverse proxy
+- HTTPS and private CA
+- GitLab private repository
 - Protected Branch
-- workflow **feature branch → Merge Request → main**
+- workflow: **feature branch → Merge Request → main**
 - GitLab Webhook → Jenkins
-- automatyczny deployment do Nginx
-- Project Access Token zgodny z zasadą minimalnych uprawnień
-- diagnostyka TLS, DNS, webhooków i usług
+- automated deployment to Nginx
+- Project Access Token with minimal permissions
+- troubleshooting of TLS, DNS, webhooks and services
 
 ```text
 Developer
-   │
-   ▼
+   |
+   v
 Feature Branch
-   │
-   ▼
+   |
+   v
 Merge Request
-   │
-   ▼
+   |
+   v
 Protected main
-   │
-   ▼
+   |
+   v
 GitLab Webhook
-   │
-   ▼
+   |
+   v
 Jenkins
-   │
-   ▼
+   |
+   v
 Nginx
 ```
 
-📦 **[Repozytorium projektu](https://github.com/madamiuk/gitlab-jenkins-cicd-lab)**  
-📘 **[Dokumentacja techniczna](https://madamiuk.github.io/gitlab-jenkins-cicd-lab/)**
+📦 **[Repository](https://github.com/madamiuk/gitlab-jenkins-cicd-lab)**  
+📘 **[Technical documentation](https://madamiuk.github.io/gitlab-jenkins-cicd-lab/)**
 
 ---
 
-# 💼 Doświadczenie
+# 💼 Experience
 
-### Intratel Sp. z o.o. — Inżynier Systemowy
+### Intratel Sp. z o.o. — System Engineer
 **12/2022 – 03/2025**
 
-- administracja systemami Linux
-- utrzymanie środowisk produkcyjnych i testowych
-- sieci LAN/WAN
-- monitoring infrastruktury z wykorzystaniem Centreon
-- analiza incydentów i problemów z dostępnością usług
-- współpraca przy wdrażaniu i utrzymaniu aplikacji
-- dokumentacja techniczna
+- Linux infrastructure administration
+- production and test environment support
+- LAN/WAN networking
+- infrastructure monitoring with Centreon
+- service availability and incident troubleshooting
+- application and infrastructure maintenance
+- technical documentation
 
-### Areszt Śledczy w Hajnówce — Specjalista ds. Informatyki
+### Areszt Śledczy w Hajnówce — IT Specialist
 **11/2007 – 01/2022**
 
-- koordynacja zespołu IT i łączności
-- administracja Windows Server i Linux
-- Active Directory · Hyper-V · KVM · QEMU
-- infrastruktura sieciowa i systemy bezpieczeństwa
-- QNAP i rozwiązania backupowe
-- bezpieczeństwo teleinformatyczne
-- dokumentacja bezpieczeństwa systemów IT
+- IT and communications team coordination
+- Windows Server and Linux administration
+- Active Directory, Hyper-V, KVM and QEMU
+- networking and security infrastructure
+- backup and storage systems
+- information security documentation
 
 ---
 
-# 🎓 Wykształcenie
+# 🎓 Education
 
-**Politechnika Białostocka**  
-🎓 Informatyka — *Systemy oprogramowania*  
-🎓 Inżynieria zarządzania — *Zarządzanie bezpieczeństwem informacji*
+**Białystok University of Technology**
+
+- Computer Science — *Software Systems*
+- Management Engineering — *Information Security Management*
 
 ---
 
-# 📜 Certyfikaty
+# 📜 Certifications
 
 - **SUSE Certified Engineer in SUSE Linux Enterprise Server 15**
 - **SUSE Certified Administrator in SUSE Linux Enterprise Server 15**
 - **CompTIA Security+ (SY0-701)**
 - **Cisco Certified Network Associate (CCNA)**
-- **Auditor wewnętrzny SZBI PN-EN ISO/IEC 27001**
+- **Internal Auditor — ISO/IEC 27001 Information Security Management System**
 
 ---
 
-# 🎯 Obecny kierunek rozwoju
+# 🎯 Current focus
 
 **DevOps · Infrastructure as Code · Platform Engineering · CI/CD · Kubernetes · Observability · Python Automation**
 
-Aktualnie rozwijam się przede wszystkim w kierunku automatyzacji infrastruktury, procesów deploymentu oraz budowania środowisk zarządzanych jako kod.
-
----
-
-# 🌍 Języki
-
-🇵🇱 Polski — ojczysty  
-🇬🇧 Angielski — B2
-
----
-
-⭐ *Dziękuję za odwiedzenie mojego profilu.*
+I am currently developing further in infrastructure automation, repeatable deployment workflows and platform-oriented engineering practices.

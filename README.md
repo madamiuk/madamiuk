@@ -1,6 +1,6 @@
 # 👨‍💻 Mirosław Adamiuk
 
-**Linux System Engineer | Infrastructure Automation | DevOps**
+**Linux System Engineer | Production Infrastructure & Managed Hosting | Automation**
 
 📍 Poland  
 💼 [LinkedIn](https://www.linkedin.com/in/miros%C5%82aw-adamiuk-548821222/) · 🌐 [GitHub](https://github.com/madamiuk)
@@ -9,18 +9,22 @@
 
 ## About me
 
-Linux System Engineer with hands-on experience in Linux infrastructure, networking, monitoring, production support and troubleshooting.
+Linux System Engineer and IT infrastructure professional with a career in IT dating back to 2005, including hands-on administration of **production Linux environments**, hosting services, networking, monitoring, virtualization and security.
 
-I focus on building repeatable infrastructure workflows with **Ansible, Bash and Git**, covering fresh-host bootstrap, service provisioning, application deployment, database connectivity, CI/CD and observability.
+At Intratel, my day-to-day work included **SUSE Linux Enterprise Server**, production web, email and FTP services, Postfix mail security and delivery troubleshooting, Centreon monitoring, and Linux infrastructure supporting cloud-based customer environments. I also worked with VMware vSphere for Linux VM operations within clearly defined permissions, collaborating with dedicated networking and virtualization teams.
 
-My current direction is **DevOps, Infrastructure as Code and Platform Engineering**, with a strong focus on practical automation and reproducible environments.
+Alongside professional operations experience, I build **personal infrastructure automation labs** using Ansible, Bash, Git, Terraform, Oracle Cloud Infrastructure and CI/CD tools. These projects are learning and engineering work, **not a claim of commercial DevOps experience**.
 
 ---
 
 ## ⚡ Highlights
 
-- Linux administration in production and test environments
-- Infrastructure automation with **Ansible**
+- Production Linux administration, primarily **SUSE Linux Enterprise Server**
+- Managed hosting operations: **web, email, FTP, DNS and related services**
+- Postfix email infrastructure security: **Amavis, Rspamd, SpamAssassin, SPF, DKIM, DMARC**
+- Service monitoring, incident investigation and mail delivery troubleshooting
+- VMware vSphere: Linux VM operations, test VM provisioning and pre-maintenance snapshots (limited privileges)
+- Infrastructure automation labs with **Ansible**
 - Fresh-host provisioning for **Debian and RHEL-based systems**
 - Java application platforms: **WildFly and Apache Tomcat**
 - PostgreSQL provisioning and JDBC/JNDI integration
@@ -39,8 +43,10 @@ My current direction is **DevOps, Infrastructure as Code and Platform Engineerin
 **Application Platforms:** WildFly · Apache Tomcat · Java 21 · Maven  
 **Databases:** PostgreSQL · MariaDB/MySQL · Oracle Database  
 **Monitoring:** Centreon · Nagios · Prometheus · Grafana · NRPE · Node Exporter  
-**Web:** Nginx · Apache HTTP Server  
-**Infrastructure:** systemd · LVM · RAID · KVM · QEMU · Docker  
+**Web & Hosting:** Nginx · Apache HTTP Server · ISPConfig · FTP · phpMyAdmin  
+**Email Operations:** Postfix · Amavis · Rspamd · SpamAssassin · SPF · DKIM · DMARC · DNSBL/RBL checks  
+**Infrastructure:** systemd · LVM · RAID · KVM · QEMU · Hyper-V · Docker  
+**VMware:** vSphere (Linux VM operations, snapshots, test VM provisioning); ESXi events (read-only)  
 **Networking:** TCP/IP · VLAN · routing · DNS · Cisco · firewalld · iptables  
 **Tools:** SSH · curl · vim · Linux CLI
 
@@ -175,26 +181,39 @@ Nginx
 
 # 💼 Experience
 
-### Intratel Sp. z o.o. — System Engineer
+### Intratel Sp. z o.o. — Linux System Engineer (SUSE Linux Enterprise Server)
 **12/2022 – 03/2025**
 
-- Linux infrastructure administration
-- production and test environment support
-- LAN/WAN networking
-- infrastructure monitoring with Centreon
-- service availability and incident troubleshooting
-- application and infrastructure maintenance
-- technical documentation
+- Administered production and test Linux environments, particularly **SUSE Linux Enterprise Server**, and maintained infrastructure services supporting the company's cloud platform and external customers.
+- Operated and troubleshot production **web, email, FTP and hosting services**, using tools including ISPConfig and phpMyAdmin.
+- Maintained and secured **Postfix** email infrastructure with **Amavis, Rspamd and SpamAssassin**, including anti-spam rule analysis.
+- Implemented and maintained **SPF, DKIM and DMARC**; investigated mail delivery issues, reviewed logs and checked mail server reputation and DNS-based blocklists.
+- Monitored service availability using **Centreon**, diagnosed incidents and supported routine maintenance and system updates.
+- Maintained OTP authentication systems based on **Yubico** keys, including database and validation servers.
+- Used **VMware vSphere** to provision test VMs within assigned permissions, operate Linux VMs and take snapshots before OS upgrades and critical service changes.
+- Reviewed **ESXi events with read-only access** during engineering on-call duties. VLAN assignment and VM network configuration were handled by the dedicated networking team; I did not administer ESXi hosts or VMware clusters.
+- Worked with other infrastructure teams and maintained technical documentation.
 
-### Areszt Śledczy w Hajnówce — IT Specialist
+### Areszt Śledczy w Hajnówce — IT Specialist / IT & Communications Team Coordinator
 **11/2007 – 01/2022**
 
-- IT and communications team coordination
-- Windows Server and Linux administration
-- Active Directory, Hyper-V, KVM and QEMU
-- networking and security infrastructure
-- backup and storage systems
-- information security documentation
+- Coordinated a four-person IT and communications team and supported the operation of server, networking, communications and security systems.
+- Administered **Windows Server**, on-premises **Active Directory**, File Server, **Hyper-V** and Linux systems, including KVM/QEMU.
+- Supported network and security infrastructure, CCTV, backups and storage systems including QNAP.
+- Prepared technical specifications for public procurement and maintained hardware, software and license inventories.
+- Documented systems and information security procedures.
+
+### University Clinical Hospital, Medical University of Białystok — IT Specialist / Application Developer
+**06/2005 – 10/2007**
+
+- Developed and maintained internal hospital applications using **EJB, JSP, Apache Tomcat and Apache HTTP Server**.
+- Implemented processes related to patient waiting lists and National Health Fund (NFZ) services.
+- Produced and verified operational reports and analyses using **MySQL**.
+
+### Centrum Nauki i Biznesu ŻAK — IT Instructor
+**10/2005 – 06/2006 (overlapping appointment)**
+
+- Taught operating systems, computer networks, structured and object-oriented programming, and computer hardware.
 
 ---
 
@@ -219,6 +238,6 @@ Nginx
 
 # 🎯 Current focus
 
-**DevOps · Infrastructure as Code · Platform Engineering · CI/CD · Kubernetes · Observability · Python Automation**
+**Infrastructure Automation · Ansible · Terraform / OCI · CI/CD · Kubernetes · Observability · Python**
 
-I am currently developing further in infrastructure automation, repeatable deployment workflows and platform-oriented engineering practices.
+My primary professional background is **Linux systems and production infrastructure operations**. I continue to build practical labs in infrastructure automation, cloud provisioning and reproducible deployments.

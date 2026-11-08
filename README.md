@@ -1,6 +1,6 @@
 # 👨‍💻 Mirosław Adamiuk
 
-**Linux System Engineer | Production Infrastructure & Managed Hosting | Automation**
+**Linux System Engineer | Production Infrastructure | Automation**
 
 📍 Poland  
 💼 [LinkedIn](https://www.linkedin.com/in/miros%C5%82aw-adamiuk-548821222/) · 🌐 [GitHub](https://github.com/madamiuk)
@@ -9,211 +9,140 @@
 
 ## About me
 
-Linux System Engineer and IT infrastructure professional with a career in IT dating back to 2005, including hands-on administration of **production Linux environments**, hosting services, networking, monitoring, virtualization and security.
+Linux System Engineer and IT infrastructure professional with experience dating back to 2005.
 
-At Intratel, my day-to-day work included **SUSE Linux Enterprise Server**, production web, email and FTP services, Postfix mail security and delivery troubleshooting, Centreon monitoring, and Linux infrastructure supporting cloud-based customer environments. I also worked with VMware vSphere for Linux VM operations within clearly defined permissions, collaborating with dedicated networking and virtualization teams.
+My professional background is focused on **production Linux environments**, particularly **SUSE Linux Enterprise Server**, managed hosting, email infrastructure, monitoring, networking and security. In daily operations I also used **VMware vSphere** to work with Linux virtual machines within assigned permissions.
 
-Alongside professional operations experience, I build **personal infrastructure automation labs** using Ansible, Bash, Git, Terraform, Oracle Cloud Infrastructure and CI/CD tools. These projects are learning and engineering work, **not a claim of commercial DevOps experience**.
+Alongside production operations, I build practical engineering labs focused on **Ansible, Terraform, Oracle Cloud Infrastructure, CI/CD, Kubernetes and observability**.
 
----
-
-## ⚡ Highlights
-
-- Production Linux administration, primarily **SUSE Linux Enterprise Server**
-- Managed hosting operations: **web, email, FTP, DNS and related services**
-- Postfix email infrastructure security: **Amavis, Rspamd, SpamAssassin, SPF, DKIM, DMARC**
-- Service monitoring, incident investigation and mail delivery troubleshooting
-- VMware vSphere: Linux VM operations, test VM provisioning and pre-maintenance snapshots (limited privileges)
-- Infrastructure automation labs with **Ansible**
-- Fresh-host provisioning for **Debian and RHEL-based systems**
-- Java application platforms: **WildFly and Apache Tomcat**
-- PostgreSQL provisioning and JDBC/JNDI integration
-- CI/CD with **GitHub Actions, Jenkins and GitLab**
-- Monitoring with **Centreon, Nagios, Prometheus, Grafana, NRPE and Node Exporter**
-- Networking, DNS, routing, firewalls and service troubleshooting
-- **SUSE Certified Engineer · CompTIA Security+ · CCNA**
+These projects are hands-on learning and engineering work and are intentionally kept separate from claims of commercial DevOps experience.
 
 ---
 
-## 🛠 Tech Stack
+## Core strengths
 
-**Linux:** SUSE Linux Enterprise Server · RHEL · Oracle Linux · Debian  
+- Linux systems administration — primarily **SUSE Linux Enterprise Server**
+- Production hosting services — web, email, FTP and DNS
+- Postfix mail infrastructure and anti-spam/security tooling
+- Monitoring, incident investigation and service troubleshooting
+- Infrastructure automation with **Ansible**
+- Infrastructure as Code with **Terraform and OCI**
+- PostgreSQL and Java application platform integration
+- CI/CD and automated deployment workflows
+- Networking, firewalls, DNS and service diagnostics
+- Daily operational work with Linux VMs in **VMware vSphere** within assigned permissions
+
+---
+
+## Tech stack
+
+**Linux:** SLES · RHEL · Oracle Linux · Debian  
 **Automation:** Ansible · Ansible Vault · Bash · Jinja2  
+**Cloud & IaC:** Oracle Cloud Infrastructure · Terraform  
 **CI/CD:** GitHub Actions · Jenkins · GitLab · Git  
-**Application Platforms:** WildFly · Apache Tomcat · Java 21 · Maven  
-**Databases:** PostgreSQL · MariaDB/MySQL · Oracle Database  
-**Monitoring:** Centreon · Nagios · Prometheus · Grafana · NRPE · Node Exporter  
-**Web & Hosting:** Nginx · Apache HTTP Server · ISPConfig · FTP · phpMyAdmin  
-**Email Operations:** Postfix · Amavis · Rspamd · SpamAssassin · SPF · DKIM · DMARC · DNSBL/RBL checks  
-**Infrastructure:** systemd · LVM · RAID · KVM · QEMU · Hyper-V · Docker  
-**VMware:** vSphere (Linux VM operations, snapshots, test VM provisioning); ESXi events (read-only)  
-**Networking:** TCP/IP · VLAN · routing · DNS · Cisco · firewalld · iptables  
-**Tools:** SSH · curl · vim · Linux CLI
+**Application Platforms:** WildFly · Apache Tomcat · Java · Maven  
+**Databases:** PostgreSQL · MariaDB/MySQL  
+**Monitoring:** Centreon · Nagios · OCI Monitoring · Prometheus · Grafana  
+**Containers & Kubernetes:** Docker · Colima · kind · Kubernetes · Helm  
+**Web & Hosting:** Nginx · Apache HTTP Server · ISPConfig  
+**Email:** Postfix · Amavis · Rspamd · SpamAssassin · SPF · DKIM · DMARC  
+**Networking & Security:** TCP/IP · VLAN · DNS · routing · firewalld · iptables  
+**Virtualization:** VMware vSphere · Hyper-V · KVM · QEMU
 
 ---
 
-# 🚀 Featured Projects
+# 🚀 Featured projects
 
 ## Ansible Infrastructure & CI/CD Lab
 
-A practical infrastructure automation environment built around **Ansible, Linux, Java application servers, PostgreSQL and monitoring**.
+Practical infrastructure automation lab covering Linux provisioning, WildFly, PostgreSQL, monitoring, application deployment, CI/CD, rollback, security hardening and cloud integration.
 
-The project is intentionally developed using fresh virtual machines to expose hidden assumptions and improve automation until infrastructure can be provisioned repeatedly and predictably.
+The environment is developed with an emphasis on **repeatability, idempotency and real operational troubleshooting**.
 
-### Current capabilities
+📦 [Repository and technical documentation →](https://github.com/madamiuk/ansible-lab)
 
-- Debian and RHEL host bootstrap
-- static IPv4, gateway and DNS configuration
-- IPv6 policy automation
-- privilege escalation managed with Ansible Vault
-- WildFly provisioning
-- Apache Tomcat 11 provisioning
-- PostgreSQL provisioning
-- Apache HTTP Server provisioning
-- JDBC and JNDI datasource configuration
-- declarative PostgreSQL `pg_hba.conf`
-- application deployment verification
-- SHA-256 artifact integrity checks
-- deployment backup and rollback
-- idempotency validation
-- Nagios, Prometheus and Grafana onboarding
-- Node Exporter and NRPE automation
-- selective UTM VM startup and controlled lab shutdown
-- one-command provisioning and deployment workflows
+---
 
-```text
-Fresh Linux VM
-      |
-      v
- Host Bootstrap
-      |
-      +------------------+------------------+------------------+
-      |                  |                  |                  |
-      v                  v                  v                  v
-   WildFly            Tomcat           PostgreSQL          Apache
-      |                  |                  |                  |
-      +-------- JDBC ----+----------------->|                  |
-      |                                                        |
-      +---------------- Monitoring -----------------------------+
-                           |
-                  +--------+--------+
-                  |                 |
-                  v                 v
-               Nagios          Prometheus
-                                   |
-                                   v
-                                 Grafana
-```
+## OCI Terraform Lab
 
-### Main workflows
+Oracle Cloud Infrastructure environment managed with Terraform.
 
-```bash
-ansible-playbook bootstrap.yml --limit <host>
+The lab covers compute, networking, DNS, monitoring, notifications and integration with Ansible-managed systems and applications.
 
-./deploy-lab.sh <wildfly-host>
-./deploy-database.sh <database-host>
-./deploy-apache.sh <apache-host>
-./deploy-tomcat.sh <tomcat-host>
+📦 [Repository and technical documentation →](https://github.com/madamiuk/oci-terraform-lab)
 
-./start-lab.sh <host1> [host2 ...]
-./halt-lab.sh
-```
+---
 
-### Deployment and provisioning safeguards
+## JobTracker
 
-- pre-flight validation before deployment
-- remote database connectivity tests
-- datasource verification
-- WAR structure validation
-- SHA-256 source/remote comparison
-- build and deployment metadata
-- automatic backup and rollback
-- application endpoint verification
-- repeated execution with `changed=0`
+Java application used as a practical deployment target for the infrastructure lab.
 
-📦 **[Repository: ansible-lab](https://github.com/madamiuk/ansible-lab)**
+The project integrates Java, WildFly, PostgreSQL, automated tests, GitHub Actions and artifact-based deployment through Ansible.
+
+📦 [Repository →](https://github.com/madamiuk/jobtracker)
 
 ---
 
 ## GitLab + Jenkins CI/CD Lab
 
-A CI/CD environment built from scratch on **Debian 13**.
+CI/CD environment built from scratch on Debian using GitLab CE, Jenkins, Nginx and automated deployment workflows.
 
-### Scope
+The project includes protected branches, merge requests, webhooks, TLS and deployment automation.
 
-- GitLab CE and Jenkins
-- Nginx reverse proxy
-- HTTPS and private CA
-- GitLab private repository
-- Protected Branch
-- workflow: **feature branch → Merge Request → main**
-- GitLab Webhook → Jenkins
-- automated deployment to Nginx
-- Project Access Token with minimal permissions
-- troubleshooting of TLS, DNS, webhooks and services
-
-```text
-Developer
-   |
-   v
-Feature Branch
-   |
-   v
-Merge Request
-   |
-   v
-Protected main
-   |
-   v
-GitLab Webhook
-   |
-   v
-Jenkins
-   |
-   v
-Nginx
-```
-
-📦 **[Repository](https://github.com/madamiuk/gitlab-jenkins-cicd-lab)**  
-📘 **[Technical documentation](https://madamiuk.github.io/gitlab-jenkins-cicd-lab/)**
+📦 [Repository →](https://github.com/madamiuk/gitlab-jenkins-cicd-lab)  
+📘 [Technical documentation →](https://madamiuk.github.io/gitlab-jenkins-cicd-lab/)
 
 ---
 
 # 💼 Experience
 
-### Intratel Sp. z o.o. — Linux System Engineer (SUSE Linux Enterprise Server)
+### Intratel Sp. z o.o. — Linux System Engineer
 **12/2022 – 03/2025**
 
-- Administered production and test Linux environments, particularly **SUSE Linux Enterprise Server**, and maintained infrastructure services supporting the company's cloud platform and external customers.
-- Operated and troubleshot production **web, email, FTP and hosting services**, using tools including ISPConfig and phpMyAdmin.
-- Maintained and secured **Postfix** email infrastructure with **Amavis, Rspamd and SpamAssassin**, including anti-spam rule analysis.
-- Implemented and maintained **SPF, DKIM and DMARC**; investigated mail delivery issues, reviewed logs and checked mail server reputation and DNS-based blocklists.
-- Monitored service availability using **Centreon**, diagnosed incidents and supported routine maintenance and system updates.
-- Maintained OTP authentication systems based on **Yubico** keys, including database and validation servers.
-- Used **VMware vSphere** to provision test VMs within assigned permissions, operate Linux VMs and take snapshots before OS upgrades and critical service changes.
-- Reviewed **ESXi events with read-only access** during engineering on-call duties. VLAN assignment and VM network configuration were handled by the dedicated networking team; I did not administer ESXi hosts or VMware clusters.
-- Worked with other infrastructure teams and maintained technical documentation.
+Production administration of **SUSE Linux Enterprise Server** and hosting infrastructure supporting internal services and external customers.
+
+Main areas included:
+
+- production web, email and FTP services
+- Postfix infrastructure and mail security
+- Amavis, Rspamd and SpamAssassin
+- SPF, DKIM and DMARC
+- monitoring with Centreon
+- incident and mail-delivery troubleshooting
+- Yubico-based OTP infrastructure
+- use of VMware vSphere in daily operations for Linux VM tasks within assigned permissions
+- system maintenance and technical documentation
+
+---
 
 ### Areszt Śledczy w Hajnówce — IT Specialist / IT & Communications Team Coordinator
 **11/2007 – 01/2022**
 
-- Coordinated a four-person IT and communications team and supported the operation of server, networking, communications and security systems.
-- Administered **Windows Server**, on-premises **Active Directory**, File Server, **Hyper-V** and Linux systems, including KVM/QEMU.
-- Supported network and security infrastructure, CCTV, backups and storage systems including QNAP.
-- Prepared technical specifications for public procurement and maintained hardware, software and license inventories.
-- Documented systems and information security procedures.
+Administration and coordination of server, network, communications and security infrastructure.
+
+Worked with:
+
+- Windows Server and Active Directory
+- File Server and Hyper-V
+- Linux, KVM and QEMU
+- backup and storage systems
+- network and security infrastructure
+- technical procurement documentation
+- hardware, software and license inventory
+
+---
 
 ### University Clinical Hospital, Medical University of Białystok — IT Specialist / Application Developer
 **06/2005 – 10/2007**
 
-- Developed and maintained internal hospital applications using **EJB, JSP, Apache Tomcat and Apache HTTP Server**.
-- Implemented processes related to patient waiting lists and National Health Fund (NFZ) services.
-- Produced and verified operational reports and analyses using **MySQL**.
+Developed and maintained internal applications using Java technologies, Apache Tomcat, Apache HTTP Server and MySQL.
+
+---
 
 ### Centrum Nauki i Biznesu ŻAK — IT Instructor
-**10/2005 – 06/2006 (overlapping appointment)**
+**10/2005 – 06/2006**
 
-- Taught operating systems, computer networks, structured and object-oriented programming, and computer hardware.
+Taught operating systems, computer networks, programming and computer hardware.
 
 ---
 
@@ -238,6 +167,8 @@ Nginx
 
 # 🎯 Current focus
 
-**Infrastructure Automation · Ansible · Terraform / OCI · CI/CD · Kubernetes · Observability · Python**
+**Linux Infrastructure · Ansible · Terraform / OCI · CI/CD · Kubernetes · Observability · Python**
 
-My primary professional background is **Linux systems and production infrastructure operations**. I continue to build practical labs in infrastructure automation, cloud provisioning and reproducible deployments.
+My primary professional background remains **Linux systems and production infrastructure operations**.
+
+The labs linked above document my continued development in infrastructure automation, cloud provisioning, reproducible deployments and modern operations practices.

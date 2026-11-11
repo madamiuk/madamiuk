@@ -122,12 +122,12 @@ Administration and coordination of server, network, communications and security 
 
 Worked with:
 
-- Windows Server and Active Directory
-- File Server and Hyper-V
-- Linux, KVM and QEMU
-- backup and storage systems
-- network and security infrastructure
-- technical procurement documentation
+- Windows Server, on-premises Active Directory, File Server and Hyper-V
+- Linux server administration, including **Samba/SMB with an LDAP backend**, centralized user and group management, and **roaming user profiles**
+- KVM and QEMU virtualization
+- **Cisco switch configuration and administration**, VLAN creation and management, and local network segmentation
+- backup, storage, communications and security infrastructure
+- technical specifications for public procurement
 - hardware, software and license inventory
 
 ---
